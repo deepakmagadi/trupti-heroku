@@ -24,5 +24,16 @@
             </ul>
             To create pipeline, head over to the <a href="https://devcenter.heroku.com/articles/pipelines" target="_blank">Pipelines</a> tutorial.
         </p>
+        <br>
+        <p>
+            Pipelines are extremely useful for managing multiple environments for your app. A common pipeline workflow has the following steps:
+            <ol type="1">
+                <li>A developer creates a pull request to make a change to the codebase.</li>
+                <li>Heroku automatically creates a review app for the pull request, allowing developers to test the change.</li>
+                <li>When the change is ready, it’s merged into the codebase’s master branch.</li>
+                <li>The master branch is automatically deployed to the pipeline’s staging app for further testing.</li>
+                <li>When the change is ready, a developer promotes the staging app to production, making it available to the app’s end users.</li>
+            </ol>
+        </p>
     </body>
 </html>
